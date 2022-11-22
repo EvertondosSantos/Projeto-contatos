@@ -1,0 +1,117 @@
+*{
+
+    padding:0;
+    margin: 0;
+    box-sizing: border-box; /* Cada elemento ficara dentro de seu espaço */
+    color:	#000000;
+    font-family: 'Oswald', sans-serif;
+}
+ul{
+    list-style: none;
+    font-size: 14px;
+}
+a{
+    text-decoration: none; /* Tirar formatação de subilinhado dos links */
+}
+body{
+    background: linear-gradient(to right,#3E5151,#DECBA4)
+}
+
+header{ /*BORDAS*/
+    /* border-bottom: 2px solid black; */
+    box-shadow: 1px 1px 10px 1px #000000;
+    /* Border-shadow é uma sombra*/
+    margin-bottom: 10px;
+}
+
+header,header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul li{
+    padding: 10px;
+}
+
+header ul li a:hover{
+    transition: 200ms;
+    text-decoration:underline;
+    color:#3e5151;
+}
+
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#NameProf, #Seta, #Descricao p, #Formulario {
+    text-align: center;
+    margin: 0 auto;
+}
+#NameProf h1{
+    font-size: 52px;
+}
+#Descricao p{
+    max-width: 425px;
+    text-align: justify;
+    
+}
+
+#Descricao{
+   display: none;
+}
+.TextoOn{
+    display:block !important;
+}
+
+
+
+#Formulario input{
+    width: 40%;
+    border:double black;
+    padding: 2px;
+    max-width: 350px;
+}
+
+#Formulario{
+    margin: 10px;
+}
+
+#Formulario button{
+    min-width: 5%;
+    max-width: 45px;
+    border:double black;
+    padding: 2px;
+    background-color: #3e515177;
+    cursor: pointer;
+}
+#Formulario button:hover{
+    transition: 300ms;
+    background-color:#DECBA4;
+}
+
+#contatos i{
+    margin: 3px;
+}
+    /* Animação da seta piscar */
+#Seta{
+    font-size: 20px;
+    cursor: pointer;
+    animation: piscar 1500ms steps(5,start) infinite;
+}
+@keyframes piscar{
+    to{
+        visibility: hidden;
+    }
+}
+
+/* Animação de rotação da seta */
+.rotacao{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+#rotacaoSeta{
+    transition: 300ms;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3bf953fa5f.js" crossorigin="anonymous"></script>
+
+    <!-- font-family: 'Open Sans', sans-serif;-->
+    <!-- font-family: 'Oswald', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Everton dos Santos</title>
+    
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><i class="fa-brands fa-etsy" alt="Logo" title="Evertos dos Santos"></i></a>
+        </div>
+        <div id="contatos">
+            <ul>
+                <li><a target="_blank" href="https://github.com/EvertondosSantos" title="Veja meu GitHub"><i class="fa-brands fa-github"></i>GitHub</a> </li>
+
+                <li><a target="_blank" href="tel:+351934019863" title="Ligue para: +351934019863"><i class="fa-sharp fa-solid fa-phone-volume"></i>Telemóvel</a></li>
+
+                <li><a target="_blank" href="https://wa.me/+351934019863" title="Mande uma mensagem no WhatsApp"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
+                
+                <li><a target="_blank" href="mailto:evertonsimoes1@hotmail.com" title="Envie um e-mail"><i class="fa-regular fa-envelope"></i>E-mail</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="NameProf">
+        <h1>Everton dos Santos</h1>
+        <h5>Front-End Web Development</h5>
+    </div>
+
+    <div id="Seta" onclick="displayAbout()">
+        <i id="rotacaoSeta"  class="fa-solid fa-angle-down"></i>
+    </div>
+
+    <div id="Descricao">
+        <p>Meu nome é Everton e esse é minha primeira página Web, pretendo criar muitas ainda, mas cada vez melhores. Veja meu GitHub e acompanhe meu progresso!</p>
+    </div>
+
+    <div id="Formulario">
+        <input type="email" placeholder="Escreva seu melhor e-mail">
+        <button>Enviar!</button>
+    </div>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById("rotacaoSeta");
+            arrow.classList.toggle("rotacao");
+            var texto = document.getElementById("Descricao");
+            texto.classList.toggle("TextoOn");
+        }
+    </script>
+
+</body>
+</html>
