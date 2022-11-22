@@ -1,1 +1,6 @@
 Falta configurar o botão de mandar email
+para que eu possa receber o contato e
+talvez enviar uma resposta por e-mail, ou
+no próprio site.
+"E-mail enviado"
+"Essa funcionalidade ainda está sendo configurada"
