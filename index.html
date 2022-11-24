@@ -48,7 +48,7 @@
 
     <div id="Formulario">
         <input type="email" placeholder="Escreva seu melhor e-mail">
-        <button>Enviar!</button>
+        <button id="button-enviar" onclick="n_enviado()">Enviar!</button>
     </div>
     <script>
         function displayAbout(){
@@ -57,6 +57,12 @@
             var texto = document.getElementById("Descricao");
             texto.classList.toggle("TextoOn");
         }
+        
+        // Fazer uma mensagem para o botão do enviar
+        function n_enviado(){
+            alert("A função enviar ainda não está disponível no site");
+        }
+
     </script>
 
 </body>
